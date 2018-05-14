@@ -812,4 +812,8 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
         if (mPopup != null)
             mPopup.dismiss();
     }
+
+    public void onWallpaperScroll(float fCurrent) {
+        forwarderManager.onWallpaperScroll(fCurrent);
+    }
 }

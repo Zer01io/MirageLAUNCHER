@@ -94,4 +94,8 @@ public class ForwarderManager extends Forwarder {
     public void onDisplayKissBar(Boolean display) {
         experienceTweaks.onDisplayKissBar(display);
     }
+
+    public void onWallpaperScroll(float fCurrent) {
+        widgetForwarder.onWallpaperScroll(fCurrent);
+    }
 }
