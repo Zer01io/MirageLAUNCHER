@@ -71,8 +71,19 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.HOME" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.vr.icon"
+                android:resource="@drawable/ic_launcher" />
+            <!-- <meta-data android:name="com.google.android.vr.icon_background" -->
+            <!-- android:resource="@android:color/red" /> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.google.intent.category.DAYDREAM" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
@@ -85,16 +96,17 @@
                 android:name="com.android.systemui.action_assist_icon"
                 android:resource="@drawable/ic_launcher" />
         </activity>
-        <activity
-            android:name=".DummyActivity"
-            android:enabled="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <!-- <activity -->
+        <!-- android:name=".DummyActivity" -->
+        <!-- android:enabled="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+
+        <!-- <category android:name="android.intent.category.HOME" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
         <activity
             android:name=".SettingsActivity"
             android:label="@string/activity_setting"
@@ -151,6 +163,14 @@
         <service android:name=".dataprovider.SearchProvider" />
         <service android:name=".dataprovider.SettingsProvider" />
         <service android:name=".dataprovider.ShortcutsProvider" />
+
+        <!--<activity android:name="com.mikedg.launcher.PhotoLauncherActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="com.google.intent.category.DAYDREAM" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
     </application>
 
 </manifest>
