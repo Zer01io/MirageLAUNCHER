@@ -478,7 +478,11 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
             case R.id.license:
                 startActivity(new Intent(this, LicenseActivity.class));
                 return true;
-
+            case R.id.bluetooth_settings:
+                Intent intentOpenBluetoothSettings = new Intent();
+                intentOpenBluetoothSettings.setAction(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
+                startActivity(intentOpenBluetoothSettings);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

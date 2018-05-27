@@ -227,4 +227,5 @@
     <string name="show_history">Show history</string>
     <string name="menu_license">License</string>
     <string name="title_activity_license">LicenseActivity</string>
+    <string name="menu_bluetooth_settings">Bluetooth Settings</string>
 </resources>
