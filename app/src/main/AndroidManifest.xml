@@ -78,8 +78,8 @@
             <meta-data
                 android:name="com.google.android.vr.icon"
                 android:resource="@drawable/ic_launcher" />
-            <!-- <meta-data android:name="com.google.android.vr.icon_background" -->
-            <!-- android:resource="@android:color/red" /> -->
+            <meta-data android:name="com.google.android.vr.icon_background"
+                android:resource="@drawable/ic_launcher" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -87,11 +87,13 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.systemui.action_assist_icon"
                 android:resource="@drawable/ic_launcher" />
@@ -148,7 +150,6 @@
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".broadcast.UninstallShortcutHandler"
             android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
@@ -164,13 +165,17 @@
         <service android:name=".dataprovider.SettingsProvider" />
         <service android:name=".dataprovider.ShortcutsProvider" />
 
-        <!--<activity android:name="com.mikedg.launcher.PhotoLauncherActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <!-- <activity android:name="com.mikedg.launcher.PhotoLauncherActivity"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-                <!--<category android:name="com.google.intent.category.DAYDREAM" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+
+        <!-- <category android:name="com.google.intent.category.DAYDREAM" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".LicenseActivity"
+            android:label="@string/title_activity_license"></activity>
     </application>
 
 </manifest>

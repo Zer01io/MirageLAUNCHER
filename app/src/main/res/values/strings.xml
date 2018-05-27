@@ -225,4 +225,6 @@
     <string name="popup_tags_title">Available tags</string>
     <string name="popup_tags_actions">Available actions</string>
     <string name="show_history">Show history</string>
+    <string name="menu_license">License</string>
+    <string name="title_activity_license">LicenseActivity</string>
 </resources>

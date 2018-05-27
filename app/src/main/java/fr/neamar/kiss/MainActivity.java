@@ -475,6 +475,10 @@ public class MainActivity extends Activity implements QueryInterface, KeyboardSc
             case R.id.preferences:
                 startActivity(new Intent(this, SettingsActivity.class));
                 return true;
+            case R.id.license:
+                startActivity(new Intent(this, LicenseActivity.class));
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
