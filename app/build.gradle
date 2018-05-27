@@ -4,7 +4,8 @@ android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId 'fr.neamar.kiss'
+        applicationId 'com.mikedg.kissvr'
+//        applicationId 'fr.neamar.kiss'
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 132
